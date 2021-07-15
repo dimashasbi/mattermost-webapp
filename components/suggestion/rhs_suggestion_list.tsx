@@ -37,7 +37,7 @@ export default function RhsSuggestionList(props: Props): JSX.Element {
     return (
         <SuggestionList
             {...otherProps}
-            location={position}
+            position={position}
         />
     );
 }
