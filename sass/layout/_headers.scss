@@ -761,9 +761,6 @@
             max-width: 120px;
         }
 
-        .team__name {
-            font-family: Metropolis, sans-serif;
-        }
         .team__name,
         .user__name {
             display: block;
@@ -777,6 +774,7 @@
 
         .team__name {
             margin: 0;
+            font-family: Metropolis, sans-serif;
             line-height: 22px;
         }
 
@@ -785,8 +783,8 @@
             @include alpha-property(color, $white, 0.8);
 
             position: relative;
-            padding-right: 4px;
             top: -3px;
+            padding-right: 4px;
             font-size: 14px;
             font-weight: 400;
         }
