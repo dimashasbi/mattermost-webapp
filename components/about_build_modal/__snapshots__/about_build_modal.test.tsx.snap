@@ -40,7 +40,7 @@ exports[`components/AboutBuildModal should match snapshot for cloud edition 1`] 
       componentClass="h1"
       id="aboutModalLabel"
     >
-      <FormattedMessage
+      <MemoizedFormattedMessage
         defaultMessage="About {appTitle}"
         id="about.title"
         values={
@@ -67,19 +67,17 @@ exports[`components/AboutBuildModal should match snapshot for cloud edition 1`] 
         <h3
           className="about-modal__title"
         >
-          <strong>
-            Mattermost
-             
-            <FormattedMessage
-              defaultMessage="Cloud"
-              id="about.cloudEdition"
-            />
-          </strong>
+          Mattermost
+           
+          <MemoizedFormattedMessage
+            defaultMessage="Cloud"
+            id="about.cloudEdition"
+          />
         </h3>
         <p
           className="subtitle"
         >
-          <FormattedMessage
+          <MemoizedFormattedMessage
             defaultMessage="High trust messaging for the enterprise"
             id="about.enterpriseEditionSst"
           />
@@ -88,7 +86,7 @@ exports[`components/AboutBuildModal should match snapshot for cloud edition 1`] 
           className="description"
         >
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Mattermost Version:"
               id="about.version"
             />
@@ -102,7 +100,7 @@ exports[`components/AboutBuildModal should match snapshot for cloud edition 1`] 
         <div
           className="form-group"
         >
-          <FormattedMessage
+          <MemoizedFormattedMessage
             defaultMessage="Licensed to:"
             id="about.licensed"
           />
@@ -118,7 +116,7 @@ exports[`components/AboutBuildModal should match snapshot for cloud edition 1`] 
           <div
             className="copy-right"
           >
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Copyright 2015 - {currentYear} Mattermost, Inc. All rights reserved"
               id="about.copyright"
               values={
@@ -136,25 +134,25 @@ exports[`components/AboutBuildModal should match snapshot for cloud edition 1`] 
       className="about-modal__hash"
     >
       <p>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Build Hash:"
           id="about.hash"
         />
         abcdef1234567890
         <br />
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="EE Build Hash:"
           id="about.hashee"
         />
         0123456789abcdef
         <br />
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Webapp Build Hash:"
           id="about.hashwebapp"
         />
       </p>
       <p>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Build Date:"
           id="about.date"
         />
@@ -205,7 +203,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
       componentClass="h1"
       id="aboutModalLabel"
     >
-      <FormattedMessage
+      <MemoizedFormattedMessage
         defaultMessage="About {appTitle}"
         id="about.title"
         values={
@@ -232,19 +230,17 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
         <h3
           className="about-modal__title"
         >
-          <strong>
-            Mattermost
-             
-            <FormattedMessage
-              defaultMessage="Enterprise Edition"
-              id="about.enterpriseEditione1"
-            />
-          </strong>
+          Mattermost
+           
+          <MemoizedFormattedMessage
+            defaultMessage="Enterprise Edition"
+            id="about.enterpriseEditione1"
+          />
         </h3>
         <p
           className="about-modal__subtitle pb-2"
         >
-          <FormattedMessage
+          <MemoizedFormattedMessage
             defaultMessage="Modern communication from behind your firewall."
             id="about.enterpriseEditionSt"
           />
@@ -253,7 +249,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
           className="form-group less"
         >
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Mattermost Version:"
               id="about.version"
             />
@@ -264,7 +260,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
             </span>
           </div>
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Database Schema Version:"
               id="about.dbversion"
             />
@@ -275,7 +271,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
             </span>
           </div>
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Database:"
               id="about.database"
             />
@@ -285,7 +281,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
         <div
           className="form-group"
         >
-          <FormattedMessage
+          <MemoizedFormattedMessage
             defaultMessage="Licensed to:"
             id="about.licensed"
           />
@@ -298,7 +294,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
       className="about-modal__footer"
     >
       <div>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Learn more about Enterprise Edition at "
           id="about.enterpriseEditionLearn"
         />
@@ -316,7 +312,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
         <div
           className="about-modal__copyright"
         >
-          <FormattedMessage
+          <MemoizedFormattedMessage
             defaultMessage="Copyright 2015 - {currentYear} Mattermost, Inc. All rights reserved"
             id="about.copyright"
             values={
@@ -335,7 +331,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Terms of Service"
               id="about.tos"
             />
@@ -347,7 +343,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Privacy Policy"
               id="about.privacy"
             />
@@ -369,21 +365,21 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
       className="about-modal__hash"
     >
       <p>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Build Hash:"
           id="about.hash"
         />
         <Nbsp />
         abcdef1234567890
         <br />
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="EE Build Hash:"
           id="about.hashee"
         />
         <Nbsp />
         0123456789abcdef
         <br />
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Webapp Build Hash:"
           id="about.hashwebapp"
         />
@@ -391,7 +387,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
         0a1b2c3d4f
       </p>
       <p>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Build Date:"
           id="about.date"
         />
@@ -443,7 +439,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
       componentClass="h1"
       id="aboutModalLabel"
     >
-      <FormattedMessage
+      <MemoizedFormattedMessage
         defaultMessage="About {appTitle}"
         id="about.title"
         values={
@@ -470,19 +466,17 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
         <h3
           className="about-modal__title"
         >
-          <strong>
-            Mattermost
-             
-            <FormattedMessage
-              defaultMessage="Team Edition"
-              id="about.teamEditiont0"
-            />
-          </strong>
+          Mattermost
+           
+          <MemoizedFormattedMessage
+            defaultMessage="Team Edition"
+            id="about.teamEditiont0"
+          />
         </h3>
         <p
           className="about-modal__subtitle pb-2"
         >
-          <FormattedMessage
+          <MemoizedFormattedMessage
             defaultMessage="All your team communication in one place, instantly searchable and accessible anywhere."
             id="about.teamEditionSt"
           />
@@ -491,7 +485,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
           className="form-group less"
         >
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Mattermost Version:"
               id="about.version"
             />
@@ -502,7 +496,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
             </span>
           </div>
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Database Schema Version:"
               id="about.dbversion"
             />
@@ -513,7 +507,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
             </span>
           </div>
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Database:"
               id="about.database"
             />
@@ -526,7 +520,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
       className="about-modal__footer"
     >
       <div>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Join the Mattermost community at "
           id="about.teamEditionLearn"
         />
@@ -544,7 +538,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
         <div
           className="about-modal__copyright"
         >
-          <FormattedMessage
+          <MemoizedFormattedMessage
             defaultMessage="Copyright 2015 - {currentYear} Mattermost, Inc. All rights reserved"
             id="about.copyright"
             values={
@@ -563,7 +557,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Terms of Service"
               id="about.tos"
             />
@@ -575,7 +569,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Privacy Policy"
               id="about.privacy"
             />
@@ -597,20 +591,20 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
       className="about-modal__hash"
     >
       <p>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Build Hash:"
           id="about.hash"
         />
         <Nbsp />
         abcdef1234567890
         <br />
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="EE Build Hash:"
           id="about.hashee"
         />
         <Nbsp />
         <br />
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Webapp Build Hash:"
           id="about.hashwebapp"
         />
@@ -618,7 +612,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
         0a1b2c3d4f
       </p>
       <p>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Build Date:"
           id="about.date"
         />
@@ -670,7 +664,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
       componentClass="h1"
       id="aboutModalLabel"
     >
-      <FormattedMessage
+      <MemoizedFormattedMessage
         defaultMessage="About {appTitle}"
         id="about.title"
         values={
@@ -697,19 +691,17 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
         <h3
           className="about-modal__title"
         >
-          <strong>
-            Mattermost
-             
-            <FormattedMessage
-              defaultMessage="Team Edition"
-              id="about.teamEditiont0"
-            />
-          </strong>
+          Mattermost
+           
+          <MemoizedFormattedMessage
+            defaultMessage="Team Edition"
+            id="about.teamEditiont0"
+          />
         </h3>
         <p
           className="about-modal__subtitle pb-2"
         >
-          <FormattedMessage
+          <MemoizedFormattedMessage
             defaultMessage="All your team communication in one place, instantly searchable and accessible anywhere."
             id="about.teamEditionSt"
           />
@@ -718,7 +710,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
           className="form-group less"
         >
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Mattermost Version:"
               id="about.version"
             />
@@ -729,7 +721,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
             </span>
           </div>
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Database Schema Version:"
               id="about.dbversion"
             />
@@ -740,7 +732,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
             </span>
           </div>
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Build Number:"
               id="about.buildnumber"
             />
@@ -751,7 +743,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
             </span>
           </div>
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Database:"
               id="about.database"
             />
@@ -764,7 +756,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
       className="about-modal__footer"
     >
       <div>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Join the Mattermost community at "
           id="about.teamEditionLearn"
         />
@@ -782,7 +774,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
         <div
           className="about-modal__copyright"
         >
-          <FormattedMessage
+          <MemoizedFormattedMessage
             defaultMessage="Copyright 2015 - {currentYear} Mattermost, Inc. All rights reserved"
             id="about.copyright"
             values={
@@ -801,7 +793,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Terms of Service"
               id="about.tos"
             />
@@ -813,7 +805,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Privacy Policy"
               id="about.privacy"
             />
@@ -835,20 +827,20 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
       className="about-modal__hash"
     >
       <p>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Build Hash:"
           id="about.hash"
         />
         <Nbsp />
         abcdef1234567890
         <br />
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="EE Build Hash:"
           id="about.hashee"
         />
         <Nbsp />
         <br />
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Webapp Build Hash:"
           id="about.hashwebapp"
         />
@@ -856,7 +848,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
         0a1b2c3d4f
       </p>
       <p>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Build Date:"
           id="about.date"
         />
@@ -908,7 +900,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
       componentClass="h1"
       id="aboutModalLabel"
     >
-      <FormattedMessage
+      <MemoizedFormattedMessage
         defaultMessage="About {appTitle}"
         id="about.title"
         values={
@@ -935,19 +927,17 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
         <h3
           className="about-modal__title"
         >
-          <strong>
-            Mattermost
-             
-            <FormattedMessage
-              defaultMessage="Team Edition"
-              id="about.teamEditiont0"
-            />
-          </strong>
+          Mattermost
+           
+          <MemoizedFormattedMessage
+            defaultMessage="Team Edition"
+            id="about.teamEditiont0"
+          />
         </h3>
         <p
           className="about-modal__subtitle pb-2"
         >
-          <FormattedMessage
+          <MemoizedFormattedMessage
             defaultMessage="All your team communication in one place, instantly searchable and accessible anywhere."
             id="about.teamEditionSt"
           />
@@ -956,7 +946,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
           className="form-group less"
         >
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Mattermost Version:"
               id="about.version"
             />
@@ -967,7 +957,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
             </span>
           </div>
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Database Schema Version:"
               id="about.dbversion"
             />
@@ -978,7 +968,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
             </span>
           </div>
           <div>
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Database:"
               id="about.database"
             />
@@ -991,7 +981,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
       className="about-modal__footer"
     >
       <div>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Join the Mattermost community at "
           id="about.teamEditionLearn"
         />
@@ -1009,7 +999,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
         <div
           className="about-modal__copyright"
         >
-          <FormattedMessage
+          <MemoizedFormattedMessage
             defaultMessage="Copyright 2015 - {currentYear} Mattermost, Inc. All rights reserved"
             id="about.copyright"
             values={
@@ -1028,7 +1018,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Terms of Service"
               id="about.tos"
             />
@@ -1040,7 +1030,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FormattedMessage
+            <MemoizedFormattedMessage
               defaultMessage="Privacy Policy"
               id="about.privacy"
             />
@@ -1062,20 +1052,20 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
       className="about-modal__hash"
     >
       <p>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Build Hash:"
           id="about.hash"
         />
         <Nbsp />
         abcdef1234567890
         <br />
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="EE Build Hash:"
           id="about.hashee"
         />
         <Nbsp />
         <br />
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Webapp Build Hash:"
           id="about.hashwebapp"
         />
@@ -1083,7 +1073,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
         0a1b2c3d4f
       </p>
       <p>
-        <FormattedMessage
+        <MemoizedFormattedMessage
           defaultMessage="Build Date:"
           id="about.date"
         />
