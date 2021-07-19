@@ -165,7 +165,7 @@ export default class ProcessPaymentSetup extends React.PureComponent<Props, Stat
                 <FormattedMessage
                     defaultMessage={'Thank you for upgrading to {selectedProductName}. You will be charged a prorated amount for your {currentProductName} plan and {selectedProductName} plan based on the number of days and number of users.'}
                     id={'admin.billing.subscription.proratedPayment.substitle'}
-                    values={{selectedProduct: this.props.selectedProduct?.name, currentProductName: this.props.currentProduct?.name}}
+                    values={{selectedProductName: this.props.selectedProduct?.name, currentProductName: this.props.currentProduct?.name}}
                 />
             );
             return (

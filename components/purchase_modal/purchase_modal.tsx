@@ -31,6 +31,7 @@ import FullScreenModal from 'components/widgets/modals/full_screen_modal';
 import RadioButtonGroup from 'components/common/radio_group';
 import Badge from 'components/widgets/badges/badge';
 import OverlayTrigger from 'components/overlay_trigger';
+import LoadingSpinner from 'components/widgets/loading/loading_spinner';
 
 import {areBillingDetailsValid, BillingDetails} from 'types/cloud/sku';
 
@@ -206,6 +207,14 @@ export default class PurchaseModal extends React.PureComponent<Props, State> {
 
     listPlans = (): JSX.Element => {
         const products = this.props.products!;
+        const currentProduct = this.state.currentProduct!;
+
+        if (!products || !currentProduct) {
+            return (
+                <LoadingSpinner/>
+            );
+        }
+
         let flatFeeProducts: ProductOptions = [];
         let userBasedProducts: ProductOptions = [];
         Object.keys(products).forEach((key: string) => {
@@ -217,12 +226,11 @@ export default class PurchaseModal extends React.PureComponent<Props, State> {
             }
         });
 
-        const currentProduct = this.state.currentProduct!;
-
         // if not on trial, only show current plan and those higher than it in terms of price
         if (!this.props.isFreeTrial) {
             if (currentProduct.price_per_seat) {
                 userBasedProducts = userBasedProducts.filter((option: RadioGroupOption) => {
+                    flatFeeProducts = [];
                     return option.price >= currentProduct.price_per_seat;
                 });
             } else {
